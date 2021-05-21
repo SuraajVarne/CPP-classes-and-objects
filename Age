@@ -1,0 +1,37 @@
+// Age classes and objects
+
+#include <iostream>
+using namespace std;
+
+class Age
+{
+    private:
+    int input;
+
+    public:
+    void accept()
+    {
+        cout << "Enter your age: ";
+        cin >> input;
+    }
+    void display()
+    {
+        if(input >= 18)
+        {
+            cout << "\n\t You are a major";
+        }
+        else
+        {
+            cout << "\n\t You are a minor ";
+        }
+    }
+};
+
+int main()
+{
+    Age obj;
+    obj.accept();
+    obj.display();
+
+    return 0;
+}
