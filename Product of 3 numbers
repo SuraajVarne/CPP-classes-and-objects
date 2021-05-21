@@ -1,0 +1,42 @@
+// Product of 3 numbers
+
+#include <iostream>
+using namespace std;
+
+class Product
+{
+    private:
+    int num1, num2, num3, product;
+
+    public:
+    void accept()
+    {
+        cout << "\n\t Enter first number: ";
+        cin >> num1;
+
+        cout << "\n\t Enter second number: ";
+        cin >> num2;
+
+        cout << "\n\t Enter third number: ";
+        cin >> num3;
+    }
+    void cal()
+    {
+        product = num1 * num2 * num3;
+    }
+    void display()
+    {
+        cout << "\n\t Product of three numbers: " << product;
+    }
+
+};
+
+int main()
+{
+    Product obj1;
+    obj1.accept();
+    obj1.cal();
+    obj1.display();
+
+    return 0;
+}
