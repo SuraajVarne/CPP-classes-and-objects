@@ -1,0 +1,41 @@
+// Gender- Classes and Objects
+
+#include <iostream>
+using namespace std;
+
+class Gender
+{
+    private:
+    char input;
+
+    public:
+    void accept()
+    {
+        cout << "\n\t Enter your gender initial: ";
+        cin >> input;
+    }
+    void display()
+    {
+        if(input == 'm' || input == 'M')
+        {
+            cout << "\n\t You are a male";
+        }
+        else if(input == 'f' || input == 'F')
+        {
+            cout << "\n\t You are a female";
+        }
+        else 
+        {
+            cout << "Others";
+        }
+    }
+};
+
+int main()
+{
+    Gender obj;
+    obj.accept();
+    obj.display();
+
+    return 0;
+}
