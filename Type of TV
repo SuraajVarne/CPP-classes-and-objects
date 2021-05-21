@@ -1,0 +1,41 @@
+// Type of TV
+
+#include <iostream>
+using namespace std;
+
+class Tv
+{
+    private:
+    char input;
+
+    public:
+    void accept()
+    {
+        cout << "\n\t Enter the initial of the color of the TV: ";
+        cin >> input;
+    }
+    void display()
+    {
+        if(input == 'C' || input == 'c')
+        {
+            cout << "\n\t Color TV";
+        }
+        else if(input == 'B' || input == 'b')
+        {
+            cout << "\n\t Black and white TV";
+        }
+        else 
+        {
+            cout << "Others";
+        }
+    }
+};
+
+int main()
+{
+    Tv obj;
+    obj.accept();
+    obj.display();
+
+    return 0;
+}
