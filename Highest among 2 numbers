@@ -1,0 +1,50 @@
+// Highest among 2 numbers (class and object)
+
+#include <iostream>
+using namespace std;
+
+class HighestNum
+{
+    private:
+    int num1, num2;
+
+    public: 
+    void accept()
+    {
+        cout << "\n\t Enter first number: ";
+        cin >> num1;
+
+        cout << "\n\t Enter second number: ";
+        cin >> num2;
+    }
+    void display()
+    {
+        if(num1 > num2)
+        {
+            cout << "\n\t First number " << num1 << " is greater";
+        }
+        else if(num2 > num1)
+        {
+            cout << "\n\t Second number " << num2 << " is greater";
+        }
+        else 
+        {
+            cout << "\n\t Both are equal";
+        }
+    }
+
+};
+
+int main()
+{
+    HighestNum obj;
+    obj.accept();
+    obj.display();
+
+
+
+
+    return 0;
+}
+
+
