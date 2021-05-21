@@ -6,21 +6,21 @@ using namespace std;
 class Gender
 {
     private:
-    char input;
+    char gender;
 
     public:
     void accept()
     {
         cout << "\n\t Enter your gender initial: ";
-        cin >> input;
+        cin >> gender;
     }
     void display()
     {
-        if(input == 'm' || input == 'M')
+        if(gender == 'm' || gender == 'M')
         {
             cout << "\n\t You are a male";
         }
-        else if(input == 'f' || input == 'F')
+        else if(gender == 'f' || gender == 'F')
         {
             cout << "\n\t You are a female";
         }
