@@ -6,21 +6,21 @@ using namespace std;
 class Tv
 {
     private:
-    char input;
+    char tv;
 
     public:
     void accept()
     {
         cout << "\n\t Enter the initial of the color of the TV: ";
-        cin >> input;
+        cin >> tv;
     }
     void display()
     {
-        if(input == 'C' || input == 'c')
+        if(tv == 'C' || tv == 'c')
         {
             cout << "\n\t Color TV";
         }
-        else if(input == 'B' || input == 'b')
+        else if(tv == 'B' || tv == 'b')
         {
             cout << "\n\t Black and white TV";
         }
