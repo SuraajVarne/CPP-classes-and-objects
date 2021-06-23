@@ -1,0 +1,63 @@
+// Factorial and Fibonacci in OOPs
+
+#include <iostream>
+using namespace std;
+
+class FactFib
+{
+    private:
+    int num, fact, prev, curr, series, next;
+
+    public:
+    FactFib()
+    {
+        fact = 1;
+        prev = 1;
+        curr = 1;
+
+        cout << "\n\t Enter number: ";
+        cin >> num;
+    }
+    void factcal()
+    {
+        for(series = 1; series <= num; series ++)
+        {
+            fact = fact * series;
+        }
+    }
+    void factdis()
+    {
+        cout << "\n\t Factorial: " << fact;
+    }
+    void fibdis()
+    {
+        cout << "\n\t Fibonacci series: ";
+        cout << " " << prev;
+        cout << " " << curr;
+
+        series = num;
+        series = 2;
+
+    }
+    void fibcal()
+    {
+        for(series = 1; series > 0; series --)
+        {
+            next = prev + curr;
+            cout << " " << next;
+            prev = curr;
+            curr = next;
+        }
+    }
+};
+
+int main()
+{
+    FactFib sameobj;
+    sameobj.factcal();
+    sameobj.factdis();
+    sameobj.fibdis();
+    sameobj.fibcal();
+
+    return 0;
+}
